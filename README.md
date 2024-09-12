@@ -19,4 +19,4 @@ The Job Bookmarking App is a React application that allows users to browse job l
 - CSS for styling
 
 
-Deployed Link:
+Deployed Link:https://byellowsensejob.netlify.app/
