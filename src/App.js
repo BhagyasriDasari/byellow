@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Jobs from './components/Jobs';
-import Bookmarks from './components/Bookmark'; // Ensure correct file name
+import Bookmarks from './components/Bookmark'; 
 import './App.css';
 
 class App extends Component {
