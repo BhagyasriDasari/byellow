@@ -38,16 +38,18 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div>
+        <div className="app-content">
+          {activeTab === 'jobs' ? (
+            <Jobs handleBookmark={this.handleBookmark} />
+          ) : (
+            <Bookmarks bookmarks={bookmarks} />
+          )}
+        </div>
+        <div className="bottom-nav">
           <button onClick={() => this.handleTabChange('jobs')}>Jobs</button>
           <button onClick={() => this.handleTabChange('bookmarks')}>Bookmarks</button>
-          <button onClick={this.clearBookmarks}>Clear Bookmarks</button> {/* Button to clear bookmarks */}
+          <button className="clear-btn" onClick={this.clearBookmarks}>Clear Bookmarks</button>
         </div>
-        {activeTab === 'jobs' ? (
-          <Jobs handleBookmark={this.handleBookmark} />
-        ) : (
-          <Bookmarks bookmarks={bookmarks} />
-        )}
       </div>
     );
   }

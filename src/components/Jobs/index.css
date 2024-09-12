@@ -1,6 +1,13 @@
 .jobs-container {
     padding: 20px;
     background-color: #f0f8ff;
+    padding-bottom: 80px; /* Increase this value if needed */
+  }
+  
+  .jobs-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #9009d8;
   }
   
   .job-card {
@@ -28,6 +35,12 @@
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+  }
+  
+  .load-more-container {
+    text-align: right; /* Align button to the right */
+    margin-top: 20px;
   }
   
   .load-more {
@@ -35,6 +48,12 @@
     background-color: #9009d8;
     color: white;
     border: none;
-    margin-top: 20px;
     cursor: pointer;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
   }
+  
+  .load-more:hover {
+    background-color: #7e3685; /* Darker shade on hover */
+  }
+  

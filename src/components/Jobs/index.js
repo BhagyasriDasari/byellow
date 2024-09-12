@@ -50,30 +50,26 @@ class Jobs extends Component {
     const { jobs, isLoading } = this.state;
 
     return (
-      <div>
+      <div className="jobs-container">
         <h2>Job Listings</h2>
         <div>
           {jobs.map((job, index) => (
             <div key={index} className="job-card">
               <h3>{job.title}</h3>
-
-              {/* Accessing correct property names */}
               <p>Location: {job?.primary_details?.Place || 'No location provided'}</p>
               <p>Salary: {job?.primary_details?.Salary || 'No salary information'}</p>
               <p>Phone: {job?.primary_details?.Phone || 'No phone number available'}</p>
-
-              {/* Add a Bookmark button */}
               <button onClick={() => this.handleBookmark(job)}>Bookmark</button>
             </div>
           ))}
         </div>
-
-        {/* Load More Button */}
-        {isLoading ? (
-          <p>Loading...</p>
-        ) : (
-          <button onClick={this.handleLoadMore}>Load More</button>
-        )}
+        <div className="load-more-container">
+          {isLoading ? (
+            <p>Loading...</p>
+          ) : (
+            <button className="load-more" onClick={this.handleLoadMore}>Load More</button>
+          )}
+        </div>
       </div>
     );
   }
