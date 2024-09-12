@@ -1,0 +1,31 @@
+.bookmarks-container {
+    padding: 20px;
+    background-color: #e0ffe0;
+    font-family: "Roboto";
+  }
+  
+  .bookmark-card {
+    border: 2px solid #52023e;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#ffffff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .bookmark-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #9009d8;;
+  }
+  
+  .bookmark-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .heading{
+    font-size: 28px;
+    color: #320425;
+    font-family: "Roboto";
+  }
